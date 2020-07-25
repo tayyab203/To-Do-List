@@ -1,4 +1,4 @@
-<script>
+
 // Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
 var i;
@@ -16,7 +16,7 @@ var i;
 for (i = 0; i < close.length; i++) {
   close[i].onclick = function() {
     var div = this.parentElement;
-    div.style.display = "none";
+    div.remove();
   }
 }
 
@@ -50,8 +50,7 @@ function newElement() {
   for (i = 0; i < close.length; i++) {
     close[i].onclick = function() {
       var div = this.parentElement;
-      div.style.display = "none";
+      div.remove();
     }
   }
 }
-</script>
